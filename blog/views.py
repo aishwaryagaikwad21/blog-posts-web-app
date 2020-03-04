@@ -25,7 +25,10 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'about.html',{'title':'aishwarya'})
+    return render(request, 'about.html')
 
 def help(request):
     return HttpResponse('<h1>Thanks</h1>')
+
+def base(request):
+    return response(request, 'base.html')

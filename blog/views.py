@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Post
 #from django.http import HttpResponse
 # Create your views here.
-posts = [
+'''posts = [
     {
         'author':'abc',
         'title': 'Post 1',
@@ -15,7 +15,7 @@ posts = [
         'content':'Block Chain',
         'data_posted':'March 05,2020' 
     }
-]
+]'''
 
 def home(request):
     content = {

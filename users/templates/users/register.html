@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="Post">
+            <!--in order to avoid server attack and security purpose-->
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">
+                    Join Today <br>
+                    {{ form }}
+                </legend>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+
+            </div>
+
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">Already Have an account? <a href="#"></a>
+            </small>
+        </div>
+
+    </div>
+{% endblock content %}
+
+<!--legend tag will give more info of form-->

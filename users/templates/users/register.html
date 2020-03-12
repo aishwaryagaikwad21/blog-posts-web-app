@@ -7,7 +7,7 @@
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">
                     Join Today <br>
-                    {{ form }}
+                    {{ form.as_p }}
                 </legend>
             </fieldset>
             <div class="form-group">
@@ -24,4 +24,4 @@
     </div>
 {% endblock content %}
 
-<!--legend tag will give more info of form-->
+<!--legend tag will give more info of form.... as_p will render form in paragraph-->

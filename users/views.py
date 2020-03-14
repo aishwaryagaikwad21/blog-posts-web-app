@@ -23,3 +23,6 @@ message.warning
 message.error'''
 
 #post to validate form
+
+def profile(request):
+    return render(request, 'users/profile.html')
